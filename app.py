@@ -14,3 +14,7 @@ async def extract_text(file: UploadFile):
     for page in doc:
         full_text += page.get_text("text") + "\n"
     return JSONResponse({"text": full_text})
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app:app", host="0.0.0.0", port=10000)
