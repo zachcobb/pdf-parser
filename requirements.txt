@@ -1,4 +1,4 @@
-# requirements.txt
-Flask
-gunicorn
+fastapi
+uvicorn
+python-multipart
 PyMuPDF
